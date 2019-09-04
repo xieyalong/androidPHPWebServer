@@ -139,6 +139,7 @@ public class ServerActivity extends Activity {
             }
         });
 //        this.ip = getLocalIpAddress();
+        this.ip ="127.0.0.1";
         this.portt = this.port;
         if (this.ip == null)
             this.ip = "localhost";
