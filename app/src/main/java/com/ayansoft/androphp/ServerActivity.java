@@ -122,7 +122,7 @@ public class ServerActivity extends Activity {
         });
         ((Button)findViewById(R.id.setting)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View param1View) {
-                Intent intent = new Intent(ServerActivity.this, QuickPrefsActivity.class);
+                Intent intent = new Intent(ServerActivity.this, ServerSettingActivity.class);
                 intent.setFlags(ServerActivity.MSG_DOWNLOADED);
                 startActivity(intent);
             }
@@ -273,7 +273,7 @@ public class ServerActivity extends Activity {
       case 0:
         break;
     } 
-    Intent intent = new Intent(this, QuickPrefsActivity.class);
+    Intent intent = new Intent(this, ServerSettingActivity.class);
     intent.setFlags(MSG_DOWNLOADED);
     startActivity(intent);
     return true;

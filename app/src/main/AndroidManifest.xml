@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuickPrefsActivity"/>
+        <activity android:name=".ServerSettingActivity"/>
     </application>
 
 </manifest>

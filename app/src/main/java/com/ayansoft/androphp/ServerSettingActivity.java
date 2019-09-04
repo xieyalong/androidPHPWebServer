@@ -6,7 +6,7 @@ import android.preference.PreferenceActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class QuickPrefsActivity extends PreferenceActivity {
+public class ServerSettingActivity extends PreferenceActivity {
   public void onBackPressed() {
     Intent intent = new Intent(this, ServerActivity.class);
     intent.setFlags(ServerActivity.MSG_DOWNLOADED);
