@@ -138,7 +138,7 @@ public class ServerActivity extends Activity {
                 stopServer();
             }
         });
-        this.ip = getLocalIpAddress();
+//        this.ip = getLocalIpAddress();
         this.portt = this.port;
         if (this.ip == null)
             this.ip = "localhost";
@@ -150,21 +150,33 @@ public class ServerActivity extends Activity {
         textView.setText("http://" + this.ip + portt);
         textView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View param1View) {
-                Intent intent = new Intent("android.intent.action.VIEW",
-                        Uri.parse("http://" + ip + portt));
-                startActivity(intent);
+                String ipstr="http://" + ip + portt;
+                System.out.println(">]2 server ip="+ipstr);
+//                Intent intent = new Intent("android.intent.action.VIEW",
+//                        Uri.parse(ipstr));
+//                startActivity(intent);
+                startWebView(ipstr);
             }
         });
         textView = (TextView)findViewById(R.id.TextLinkmyadmin);
         textView.setText("http://" + this.ip + this.portt + "/phpmyadmin");
         textView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View param1View) {
-                Intent intent = new Intent("android.intent.action.VIEW",
-                        Uri.parse("http://" + ip + portt + "/phpmyadmin"));
-                startActivity(intent);
+                String ipstr="http://" + ip + portt + "/phpmyadmin";
+                System.out.println(">]1 server ip="+ipstr);
+                //跳转到浏览器
+//                Intent intent = new Intent("android.intent.action.VIEW",
+//                        Uri.parse(ipstr));
+//                startActivity(intent);
+                startWebView(ipstr);
             }
         });
         controlServer(true, 10000);
+    }
+    public void startWebView(String url){
+        Intent intent=new Intent(this,ServerWebviewActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
     }
     private void startServer() {
         this.pd = ProgressDialog.show(this, "AndroPHP", "Starting Server...", true, false);
@@ -236,8 +248,9 @@ public class ServerActivity extends Activity {
                   if (!inetAddress.isLoopbackAddress()) {
                       String str = inetAddress.getHostAddress();
                       boolean bool = InetAddressUtils.isIPv4Address(str);
-                      if (bool)
+                      if (bool){
                           return str;
+                      }
                   }
               }
 //            for (InetAddress inetAddress : arrayList1) {
