@@ -17,7 +17,7 @@ public class QuickPrefsActivity extends PreferenceActivity {
   
   public void onCreate(Bundle paramBundle) {
     super.onCreate(paramBundle);
-    addPreferencesFromResource(R.xml.preferences);
+    addPreferencesFromResource(R.xml.preferences_android_php_);
   }
   
   public boolean onCreateOptionsMenu(Menu paramMenu) {
