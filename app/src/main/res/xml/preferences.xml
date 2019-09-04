@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Update"
+        android:key="update">
+        <CheckBoxPreference
+            android:title="Enable updates"
+            android:key="perform_updates"
+            android:summary="Enable or disable data updates"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Settings"
+        android:key="settings">
+        <EditTextPreference
+            android:title="Port"
+            android:key="updates_port"
+            android:summary="Define the port"
+            android:defaultValue="8080"
+            android:dialogTitle="Set new port"
+            android:dialogMessage="Set new port" />
+        <EditTextPreference
+            android:title="www path"
+            android:key="updates_path"
+            android:summary="Define the www path"
+            android:defaultValue="/mnt/sdcard/www"
+            android:dialogTitle="Set www path"
+            android:dialogMessage="input new path" />
+        <CheckBoxPreference
+            android:title="Root Access"
+            android:key="enable_root"
+            android:summary="Enable or disable root"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

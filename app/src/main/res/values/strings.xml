@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroPHP</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">AndroPHP</string>
+    <string name="link"><u>http://localhost/</u></string>
+    <string name="linkmyadmin"><u>http://localhost/phpmyadmin</u></string>
+</resources>

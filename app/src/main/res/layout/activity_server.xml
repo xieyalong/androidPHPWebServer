@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ff262626"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#00e8e8e8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="36.0dip"
+            android:textStyle="bold"
+            android:textColor="#ffcc6611"
+            android:id="@id/textView1"
+            android:padding="6.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AndroPHP"
+            android:shadowColor="#ff111319"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="12.0" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffd5d5d5"
+            android:id="@id/textView3"
+            android:padding="4.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:text="PHP &amp; MySQL Server"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="3.0" />
+        <ToggleButton
+            android:id="@id/toggleButton1"
+            android:background="@drawable/toggle_bg"
+            android:padding="25.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.0dip"
+            android:textOn=""
+            android:textOff="" />
+        <TextView
+            android:textSize="14.0dip"
+            android:textColor="#ffcccccc"
+            android:linksClickable="false"
+            android:id="@id/textLink"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:text="@string/link" />
+        <TextView
+            android:textSize="14.0dip"
+            android:textColor="#ffcccccc"
+            android:linksClickable="false"
+            android:id="@id/TextLinkmyadmin"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:text="@string/linkmyadmin" />
+        <TextView
+            android:textColor="#ff888888"
+            android:id="@id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="Ömer Ayan" />
+        <TextView android:textColor="#ff888888"
+            android:id="@id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ayansoft@gmail.com" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/header_bg"
+        android:padding="4.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@id/exitButton"
+            android:background="@drawable/black_button"
+            android:paddingLeft="25.0dip"
+            android:paddingRight="25.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.0dip"
+            android:text="Exit"
+            style="@style/ButtonText" />
+        <Button android:id="@id/setting"
+            android:background="@drawable/black_button"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.0dip"
+            android:text="Setting"
+            style="@style/ButtonText" />
+        <Button
+            android:id="@id/hideButton"
+            android:background="@drawable/black_button"
+            android:paddingLeft="25.0dip"
+            android:paddingRight="25.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.0dip"
+            android:text="Hide"
+            style="@style/ButtonText" />
+    </LinearLayout>
+</LinearLayout>

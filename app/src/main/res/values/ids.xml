@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="imageView1" />
+    <item type="id" name="textView1" />
+    <item type="id" name="textView3" />
+    <item type="id" name="toggleButton1" />
+    <item type="id" name="textLink" />
+    <item type="id" name="TextLinkmyadmin" />
+    <item type="id" name="textView2" />
+    <item type="id" name="textView4" />
+    <item type="id" name="exitButton" />
+    <item type="id" name="setting" />
+    <item type="id" name="hideButton" />
+</resources>

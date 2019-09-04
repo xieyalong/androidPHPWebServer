@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar" />
+    <style name="ButtonText">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">3.0dip</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+</resources>
