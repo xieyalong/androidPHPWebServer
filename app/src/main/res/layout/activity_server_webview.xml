@@ -10,8 +10,10 @@
         android:gravity="center"
         android:textColor="@color/colorAccent"
         android:background="@color/colorPrimary"/>
-<WebView
-    android:id="@+id/web"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></WebView>
+    <LinearLayout
+        android:id="@+id/ll_html_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
 </LinearLayout>

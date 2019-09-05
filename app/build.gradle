@@ -29,4 +29,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation 'com.android.support:multidex:1.0.3'
+    //webview
+    implementation 'com.just.agentweb:agentweb:4.0.3-beta' // (必选)
+    implementation 'com.just.agentweb:filechooser:4.0.3-beta'// (可选)
+//    implementation 'com.just.agentweb:download:4.0.3-beta' // (可选)
+//    implementation 'com.github.Justson:Downloader:v4.0.3'// (可选)
 }

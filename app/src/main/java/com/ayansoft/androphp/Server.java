@@ -59,7 +59,7 @@ public class Server {
   public static void runSuCommand(String paramString) {
     try {
       OutputStream outputStream = Runtime.getRuntime().exec("su -c sh").getOutputStream();
-      Log.d("", "runSuCommand() cmd=" + paramString);
+      System.out.println(">]runSuCommand() cmd=" + paramString);
       writeLine(outputStream, paramString);
       outputStream.flush();
       return;
@@ -161,7 +161,7 @@ public class Server {
 
   public boolean deleteFolder(String paramString) {
     File file = new File(paramString);
-    Log.d("DeleteRecursive", "DELETEPREVIOUS TOP" + file.getPath());
+    System.out.println(">]DeleteRecursive DELETEPREVIOUS TOP" + file.getPath());
     if (file.isDirectory()) {
       String[] arrayOfString = file.list();
       for (byte b = 0;; b++) {
@@ -171,10 +171,10 @@ public class Server {
         }
         File file1 = new File(file, arrayOfString[b]);
         if (file1.isDirectory()) {
-          Log.d("DeleteRecursive", "Recursive Call" + file1.getPath());
+          System.out.println(">]DeleteRecursive Recursive Call" + file1.getPath());
           deleteFolder(file1.getPath());
         } else {
-          Log.d("DeleteRecursive", "Delete File" + file1.getPath());
+          System.out.println(">]DeleteRecursive Delete File" + file1.getPath());
           if (!file1.delete())
             break;
         }
@@ -182,7 +182,7 @@ public class Server {
     } else {
       return true;
     }
-    Log.d("DeleteRecursive", "DELETE FAIL");
+    System.out.println("DeleteRecursive DELETE FAIL");
     return false;
   }
 
